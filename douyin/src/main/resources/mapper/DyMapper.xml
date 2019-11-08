@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">    
+<mapper namespace="com.jx.douyin.dao.DyMapper">
+    <select id="lastData" resultType="com.jx.douyin.domain.Douyin">
+        select * from dy order by id DESC limit 1
+    </select>
+</mapper>
